@@ -1,5 +1,5 @@
 # Wireless Display Fix I guess
--------------
+
 A Lazy one click(kinda-sorta-ish) solution for the infamous:
 
 ```
@@ -16,7 +16,7 @@ According to abbodi1406.
 
 This repo contains the necessary packages and a powershell script to fix just that.
 
-I really should not be shipping UUP files so I highly recommend you getting them yourself from UUP dump:
+I really should not be shipping UUP files so I highly recommend you getting them yourself from UUP dump or somewhere else:
 
 https://uupdump.net/getfile.php?id=e2d7464a-c8cc-4779-ad1d-36699425f3d3&file=Microsoft-Windows-RegulatedPackages-Package.ESD
 
@@ -24,8 +24,19 @@ https://uupdump.net/getfile.php?id=e2d7464a-c8cc-4779-ad1d-36699425f3d3&file=Mic
 
 https://uupdump.net/getfile.php?id=e2d7464a-c8cc-4779-ad1d-36699425f3d3&file=Microsoft-Windows-Client-LanguagePack-Package_en-us-amd64-en-us.esd
 
+After downloading them you should extract each of them to a different folder with 7-zip.
+Then add them to your system with:
+```
+dism /Online /Add-Package /PackagePath:1\Microsoft-Windows-RegulatedPackages-Package~31bf3856ad364e35~amd64~~10.0.19041.1.mum
+
+dism /Online /Add-Package /PackagePath:2\Microsoft-Windows-RegulatedPackages-wow64-package~31bf3856ad364e35~amd64~~10.0.19041.1.mum
+
+dism /Online /Add-Package /PackagePath:3\update.mum
+```
+
+Or you can use this repo.
 # Instructions
-----
+
 1. Download the whole repo
 2. Unzip the thing
 3. Run the powershell script as Administrator

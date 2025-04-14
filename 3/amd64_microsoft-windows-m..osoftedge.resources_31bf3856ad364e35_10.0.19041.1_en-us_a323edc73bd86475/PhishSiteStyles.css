@@ -1,0 +1,318 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@font-face {
+    font-family: "Browser MDL2 Assets";
+    src: url('ms-appx-web:///Assets/Fonts/BrowserMDL.ttf#Browser MDL2 Assets') format('truetype');
+}
+
+#Wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    padding-top: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 32px;
+}
+
+.red {
+    background-color: #cc0000;
+}
+
+.redFont {
+    color: #cc0000;
+}
+
+.white {
+    color: #ffffff !important;
+}
+
+.black {
+    color: #575757 !important;
+    background-color: #ffffff;
+}
+
+.white-pushbutton {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    color: #cc0000;
+    height: 32px;
+    padding: 0 16px 0 16px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    background-color: #ffffff;
+    transition: height 0s;
+}
+
+    .white-pushbutton:active {
+        color: #000000;
+        background-color: #999999;
+        transition-duration: .001s;
+        transition-timing-function: ease-out;
+    }
+
+    .white-pushbutton:hover {
+        border: 2px solid #999999;
+        transition-duration: .15s;
+        transition-timing-function: ease-out;
+    }
+
+    .white-pushbutton:hover {
+        cursor: pointer;
+    }
+
+h1 {
+    line-height: 40px;
+    font-size: 34px;
+    font-family: 'Segoe UI Light', 'Segoe UI';
+    font-weight: normal;
+    color: #1f1f1f;
+    margin: 0 0 0 -2px;
+    padding: 4px 0 4px 0;
+}
+
+h2 {
+    line-height: 32px;
+    font-size: 28px;
+    font-family: 'Segoe UI Light', 'Segoe UI';
+    font-weight: normal;
+    color: #1f1f1f;
+    margin: 0 0 0 -2px;
+    padding: 4px 0 4px 0;
+}
+
+h3 {
+    line-height: 24px;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    color: #ffffff;
+    margin: 0 0 0 -2px;
+    padding: 4px 0 4px 0;
+    opacity: 0.7;
+}
+
+p {
+    line-height: 22px;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    color: #ffffff;
+    margin: 16px 0 0 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.ul-rtl {
+    list-style: none;
+    margin-right: 10px;
+    padding-right: 0;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.li-rtl {
+    padding-right: 1em;
+    text-indent: -1em;
+}
+
+.bullet-li:before {
+    content: "\2022";
+    padding-right: 6px;
+}
+
+.bullet-li-rtl:before {
+    content: "\2022";
+    padding-left: 6px;
+}
+
+.caret-li:before {
+    content: ">";
+    padding-right: 5px;
+}
+
+.caret-li-rtl:before {
+    content: ">";
+    padding-left: 5px;
+}
+
+td, table {
+    vertical-align: top;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.msgBlock {
+    max-width: 600px;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.msgIcon {
+    width: 80px;
+    font-size: 80px;
+    font-weight: normal;
+    color: #1f1f1f;
+    margin: 6px 4px 0px 20px;
+    float: left;
+    vertical-align: top;
+}
+
+.msgBody {
+    max-width: 460px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 20px;
+}
+
+#webpage {
+    line-height: 20px;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    color: #4d4d4d;
+}
+
+.icon {
+    font-family: "Browser MDL2 Assets";
+}
+
+
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+
+@media screen and (max-width: 610px) {
+
+    #webpage {
+        line-height: 20px;
+        font-size: 15px;
+        font-family: 'Segoe UI';
+        font-weight: normal;
+        color: #4d4d4d;
+    }
+
+    h1 {
+        line-height: 32px;
+        font-size: 26px;
+        font-family: 'Segoe UI Light', 'Segoe UI';
+        font-weight: normal;
+        color: #1f1f1f;
+        margin: 0;
+        padding: 4px 6% 0 0;
+    }
+
+    p {
+        line-height: 22px;
+        font-size: 15px;
+        font-family: 'Segoe UI';
+        font-weight: normal;
+        color: #ffffff;
+        margin: 16px 6% 0 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .ul-rtl {
+        list-style: none;
+        margin-right: 10px;
+        padding-right: 0;
+    }
+
+    li {
+        padding-left: 1em;
+        text-indent: -1em;
+    }
+
+    .li-rtl {
+        padding-right: 1em;
+        text-indent: -1em;
+    }
+
+    .bullet-li:before {
+        content: "\2022";
+        padding-right: 6px;
+    }
+
+    .bullet-li-rtl:before {
+        content: "\2022";
+        padding-left: 6px;
+    }
+
+    .caret-li:before {
+        content: ">";
+        padding-right: 5px;
+    }
+
+    .caret-li-rtl:before {
+        content: ">";
+        padding-left: 5px;
+    }
+
+    td, table {
+        vertical-align: top;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .msgBlock {
+        vertical-align: top;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .msgIcon {
+        width: 68px;
+        font-size: 68px;
+        font-weight: normal;
+        color: #1f1f1f;
+        margin: 10px 4px 10px 6%;
+        display: block;
+        vertical-align: top;
+    }
+
+    .msgBody {
+        width: 92%;
+        max-width: none;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 6%;
+        padding: 0 0 0 0;
+    }
+
+    #webpage {
+        line-height: 20px;
+        font-size: 15px;
+        font-family: 'Segoe UI';
+        font-weight: normal;
+        color: #4d4d4d;
+    }
+}

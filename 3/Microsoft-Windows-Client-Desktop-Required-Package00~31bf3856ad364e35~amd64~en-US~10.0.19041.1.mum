@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package00" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-Windows-Client-Desktop-Required-Package00" releaseType="Language Pack">
+    <update name="2F5035B5C7AB9A8FF547E8C10BDAE514DBCE18F4B3A44DE9C0C043358F7B2749">
+      <component>
+        <assemblyIdentity name="microsoft-windows-client-desktop-required-deployment000" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="5E4456F5CAA1898BDE7C8600D1EC21D1EDFF8C3F98E46C0BB2A24CACED357E57">
+      <component>
+        <assemblyIdentity name="ndisuio.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="AE4A3AB2CD9E4177DB6D95306F0991A78A1D1E75B7C69DAC269504D589E88037">
+      <component>
+        <assemblyIdentity name="usbser.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

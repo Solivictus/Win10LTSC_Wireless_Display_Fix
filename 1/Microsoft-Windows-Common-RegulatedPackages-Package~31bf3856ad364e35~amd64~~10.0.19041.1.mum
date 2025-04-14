@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Common-RegulatedPackages-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-Common-RegulatedPackages" releaseType="Feature Pack">
+    <update name="d8e3911997ee4f8282e3fee49a385ee5">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Media-Foundation-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="4cf0a1b90c9bd0700f9d838aa8efd47d">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Media-Format-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="f9f8db1dc0ed545e6e98f92704776930">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Media-Streaming-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="b95315e650eed70df08ae3d37f49ceed">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-MediaPlayback-OC-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="2d7eae9540c904af599c844b5546fe03">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Portable-Devices-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="34d10e88f5b8cf46aed9cf35ef9f87b3">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-WebcamExperience-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="e038fe146894d92e0d511e47a38eef3a">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-WinSATMediaFiles-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

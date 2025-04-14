@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>This page is having a problem loading</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        window.onload = function () {
+            setGoHomeTarget();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="ACR">
+            <table>
+                <tr>
+                    <td>
+                        <span id="icon">&#xE946;</span>
+                    </td>
+                    <td>
+                        <h1 id="acr_error_header">This page is having a problem loading</h1>
+                        <p id="acr_error_body1">We tried to load this page for you a few times, but there is still a problem with this site. We know you have better things to do than to watch this page reload over and over again so try coming back to this page later.</p>
+                        <br />
+                        <p id="acr_error_body2">Try this</p>
+                        <ul>
+                            <li><a href="about:start" id="gohome"><id id="acr_error_gohome">Go to your Start page</id></a></li>
+                            <li><a href="#" onclick="window.open(); return false;"><id id="acr_error_opentab">Open a new tab</id></a></li>
+                            <li><a href="#" onclick="clickSendFeedback()" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li> 
+                        </ul>
+                        <br>
+                        <a href="#" onclick="clickPrivacyStatement()" id="acr_error_PrivacyStatementLink"><id id="acr_error_privacystatement"><small>Privacy statement</small></id></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

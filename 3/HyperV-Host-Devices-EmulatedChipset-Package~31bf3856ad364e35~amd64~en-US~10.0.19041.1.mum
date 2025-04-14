@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="HyperV-Host-Devices-EmulatedChipset-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="HyperV-Host-Devices-EmulatedChipset-en-US" releaseType="Language Pack">
+    <parent disposition="detect">
+      <assemblyIdentity name="HyperV-Host-Devices-EmulatedChipset-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </parent>
+    <update name="44cf2bbe0b3fc53b11d986f783d92ac3">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="HyperV-Host-Devices-EmulatedChipset-merged-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="e5c007753a2a16a1018a1fea5c5a135f">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="HyperV-VmChipset-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

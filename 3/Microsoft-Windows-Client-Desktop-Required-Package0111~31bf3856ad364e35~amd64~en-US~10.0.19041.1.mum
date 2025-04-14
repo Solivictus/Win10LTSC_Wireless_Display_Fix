@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package0111" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-Windows-Client-Desktop-Required-Package0111" releaseType="Language Pack">
+    <update name="c4e0e43b5a33cced7f869fbcc387e65c">
+      <component>
+        <assemblyIdentity name="microsoft-windows-client-desktop-required-deployment01110" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="E4B20DD68EF6CA140301FAB953DDDADE9C195E8A124A60DE212B70BDCAA314C9">
+      <component>
+        <assemblyIdentity name="urschipidea.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="B0BC72C9AC24AD7C8664B76CCDDA92A7AABF8B63148A122602651381ED756E84">
+      <component>
+        <assemblyIdentity name="urssynopsys.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="37EAD412ABB57CFFC72ED2D8D4EAFCE02E093A9AAEE3CCC71B279CB6617D1320">
+      <component>
+        <assemblyIdentity name="genericusbfn.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="26E00611D89F4A4D9C8F2F077F164DC11A302272764CB34510B0A5AA65708061">
+      <component>
+        <assemblyIdentity name="ufxchipidea.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="CCCA96817C1A69F94AC730D66516CE51F8D3DAD9B13C580870F9181F69C08776">
+      <component>
+        <assemblyIdentity name="ufxsynopsys.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

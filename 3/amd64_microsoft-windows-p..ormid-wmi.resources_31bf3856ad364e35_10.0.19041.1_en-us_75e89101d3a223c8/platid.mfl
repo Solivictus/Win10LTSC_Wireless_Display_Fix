@@ -1,0 +1,10 @@
+#pragma autorecover
+#pragma namespace("\\\\.\\root\\CIMV2")
+instance of __namespace{ name="MS_409";};
+#pragma namespace("\\\\.\\root\\CIMV2\\MS_409")
+
+[Description("<200>") : Amended ToSubclass,AMENDMENT, LOCALE("MS_409")] 
+class MSFT_PlatformIdentifier
+{
+  [static, Description("<201>") : Amended ToSubClass] uint32 GetPlatformIdentifier([In, Description("<202>") : Amended ToSubClass] string Name, [Out, Description("<203>") : Amended ToSubClass] string Identifier);
+};

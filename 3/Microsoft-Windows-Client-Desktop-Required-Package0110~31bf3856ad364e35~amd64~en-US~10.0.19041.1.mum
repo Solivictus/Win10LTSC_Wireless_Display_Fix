@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package0110" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-Windows-Client-Desktop-Required-Package0110" releaseType="Language Pack">
+    <update name="6d3bca861ea4b1ad88782776165584fd">
+      <component>
+        <assemblyIdentity name="microsoft-windows-client-desktop-required-deployment01100" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="5D9549A211A116377A9BAB6136F11007795C8013B93D1C2040D07A35F76756FE">
+      <component>
+        <assemblyIdentity name="kdnic.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="5E4456F5CAA1898BDE7C8600D1EC21D1EDFF8C3F98E46C0BB2A24CACED357E57">
+      <component>
+        <assemblyIdentity name="ndisuio.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="050A04FDA58FD56756A1F09F95A1827644E136144CC5D8BDAEDF15700BC12BC2">
+      <component>
+        <assemblyIdentity name="Microsoft-Windows-WindowsFoundation-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

@@ -1,0 +1,3 @@
+#pragma namespace ( "\\\\.\\root\\CIMV2\\MS_409")
+
+#pragma deleteclass("MSFT_PlatformIdentifier",nofail)

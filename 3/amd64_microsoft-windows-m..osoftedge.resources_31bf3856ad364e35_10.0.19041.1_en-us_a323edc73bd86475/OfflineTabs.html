@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="ms-appx-web:///Assets/OfflineTabs/OfflineTabs_Files/OfflineTabs.css" media="all">
+</head>
+<body>
+    <div class="NewTabPageHostComponentContainer">
+        <x-ms-windowscomponent></x-ms-windowscomponent>
+    </div>
+
+    <script>
+        function getNewTabPageHostComponent() {
+            var newTabPageHostComponent = document.getElementsByTagName("x-ms-windowscomponent")[0];
+            return newTabPageHostComponent;
+        }
+
+        function getNewTabPageHostObjectModel() {
+            return getNewTabPageHostComponent().componentObjectModel;
+        }
+
+        function loadNewTabPageHostComponent() {
+            var newTabPageHostComponent = getNewTabPageHostComponent();
+            newTabPageHostComponent.style.width = "100%";
+            newTabPageHostComponent.style.height = "100%";
+
+            newTabPageHostComponent.addEventListener("attached", function (eventArgs) {
+                registerEventHandlersForNewTabPageComponent();
+                var objectModel = getNewTabPageHostObjectModel();
+                objectModel.setConversationGuid(getMachineState().conversationGuid);
+                objectModel.notifyBrowserReady();
+            });
+
+            newTabPageHostComponent.addEventListener("detached", function (eventArgs) {
+                // try and re-attach.
+                attachNtpHostComponent();
+            });
+
+            attachNtpHostComponent();
+
+            function attachNtpHostComponent() {
+                var factoryAcid = "Windows.UI.WebUI.Private.WindowsComponentBrokerFactory";
+                var componentAumid = "Microsoft.Windows.NewTabPageHost_cw5n1h2txyewy!OfflineCompass"; // Activate NewTabPage Host in offline mode. 
+                var omAcid = "NewTabPageHost.ObjectModel.NewTabPageHostComponentObjectModel";
+                var activationArguments = { LaunchArgs: "" };
+
+                newTabPageHostComponent.attach(componentAumid, {
+                    componentFactoryActivatableClassId: factoryAcid,
+                    componentObjectModelActivatableClassId: omAcid,
+                    activationArguments: activationArguments
+                });
+            }
+        }
+
+        function showServiceUIPage() {
+            postFrameMessage("showServiceUI");
+        }
+
+        function getMachineState() {
+            var machineState = {};
+            if (ServiceUIFrameContext) {
+                var machineStateJson = ServiceUIFrameContext.getCachedFrameMessage("machineState");
+                machineState = JSON.parse(machineStateJson);
+            }
+            return machineState;
+        }
+
+        function registerMachineStateListener() {
+            window.addEventListener("machineState", () => {
+                var machineState = getMachineState();
+                var objectModel = getNewTabPageHostObjectModel();
+                objectModel.setConversationGuid(machineState.conversationGuid);
+                objectModel.sendMessage("machineState", JSON.stringify(machineState));
+            }, true);
+        }
+
+        function registerServiceUIEventListener(eventName, cacheKey) {
+            window.addEventListener(eventName, () => {
+                var data = getCachedFrameMessage(cacheKey);
+                var objectModel = getNewTabPageHostObjectModel();
+                objectModel.sendMessage(cacheKey, data);
+            }, true);
+        }
+
+        function registerServiceUIEventListeners() {
+            registerMachineStateListener();
+            registerServiceUIEventListener("topsitesavailable", "topSites");
+            registerServiceUIEventListener("erroravailable", "error");
+            registerServiceUIEventListener("settingsavailable", "pageSettings");
+        }
+
+        function registerEventHandlersForNewTabPageComponent() {
+            var objectModel = getNewTabPageHostObjectModel();
+            objectModel.addEventListener("messagereceived", onMessageReceived);
+        }
+
+        function onNavigationRequested(uri) {
+            var payload = {
+                targetUrl: uri
+            };
+            postFrameMessage("navigate", payload);
+        }
+
+        function onPostFrameMessageRequested(eventArgs) {
+            postFrameMessage(eventArgs.name, eventArgs.data);
+        }
+
+        function onGetCachedFrameMessageRequested(cacheKey) {
+            var data = getCachedFrameMessage(cacheKey);
+            var objectModel = getNewTabPageHostObjectModel();
+            objectModel.sendMessage(cacheKey, data);
+        }
+
+        function onMessageReceived(eventArgs) {
+            var name = eventArgs.name;
+            var payload;
+            try {
+                payload = JSON.parse(eventArgs.data);
+            }
+            catch (err) {
+                payload = eventArgs.data;
+            }
+
+            switch (name) {
+                case "navigate":
+                    onNavigationRequested(payload);
+                    break;
+                case "postFrameMessage":
+                    onPostFrameMessageRequested(payload);
+                    break;
+                case "getCachedFrameMessage":
+                    onGetCachedFrameMessageRequested(payload);
+                    break;
+            }
+        }
+
+        function postFrameMessage(message, payload) {
+            if (ServiceUIFrameContext) {
+                var jsonPayload = payload ? JSON.stringify(payload) : null;
+                ServiceUIFrameContext.postFrameMessage(message, jsonPayload);
+            }
+        }
+
+        function getCachedFrameMessage(cacheKey) {
+            return ServiceUIFrameContext.getCachedFrameMessage(cacheKey);
+        }
+
+        function main() {
+            registerServiceUIEventListeners();
+            loadNewTabPageHostComponent();
+            showServiceUIPage();
+        }
+
+        main();
+
+    </script>
+</body>
+</html>

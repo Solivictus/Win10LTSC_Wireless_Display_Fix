@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Start fresh</title>
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="startfresh">
+            <table>
+                <tr>
+                    <td>
+                        <span id="icon">&#x0E8BD;</span>
+                    </td>
+                    <td>
+                        <h1 id="startfresh_header">Close all tabs and start fresh?</h1>
+                        <p id="startfresh_body">Select any tab to continue where you left off. Or close them all and get a fresh start.</p>
+                        <br />
+                        <br />
+                        <button class="pushbutton" type="submit" onclick="window.external.StartFresh();"><id id="startfresh_startfreshbutton">Close all tabs</id></button>
+                        <ul>
+                            <li><a href="#" onclick="clickSendFeedback()" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                        </ul>
+                        <br>
+                        <a href="#" onclick="clickPrivacyStatement()" id="startfresh_PrivacyStatementLink"><id id="startfresh_privacystatement"><small>Privacy statement</small></id></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

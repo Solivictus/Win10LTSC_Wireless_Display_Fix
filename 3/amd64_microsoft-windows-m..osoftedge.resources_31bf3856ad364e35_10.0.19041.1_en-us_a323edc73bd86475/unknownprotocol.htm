@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>The webpage cannot be displayed</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+
+        window.onload = function () {
+            var url = getUrl();
+            var urlElements = document.getElementsByClassName("webpageURL");
+            for (var i = 0; i < urlElements.length; i++) {
+                urlElements[i].textContent = url;
+            }
+
+            getInfo();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="unknownprotocol">
+            <table>
+                <tr>
+                    <td>
+                        <span id="icon">&#xE946;</span>
+                    </td>
+                    <td>
+                        <h1 id="unknownprotocol_header">That&rsquo;s odd... Microsoft Edge can&rsquo;t find this page</h1>
+                        <p id="unknownprotocol_body1">Something on this page needs an app that isn&rsquo;t installed.</p>
+                        <p id="unknownprotocol_body2">Try this</p>
+                        <ul>
+                            <li><id id="unknownprotocol_retype">Retype the web address</id></li>
+                            <li><a href="#" onclick="window.history.back(); return false;"><id id="unknownprotocol_goback">Go back to the last page</id></a></li>
+                            <li><id id="unknownprotocol_search">Search for the app you need</id></li>
+                            <li><a href="#" onclick="clickSendFeedback()" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                        </ul>
+                        <br>
+                        <a href="#" onclick="clickPrivacyStatement()" id="unknownprotocol_PrivacyStatementLink"><id id="unknownprotocol_privacystatement"><small>Privacy statement</small></id></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

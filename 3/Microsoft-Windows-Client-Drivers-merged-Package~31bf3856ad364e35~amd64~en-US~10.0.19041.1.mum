@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Client-Drivers-merged-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-Client-Drivers-merged-en-US" releaseType="Language Pack">
+    <parent disposition="detect">
+      <assemblyIdentity name="Microsoft-Windows-Client-Drivers-merged-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </parent>
+    <update name="a16734f39312e4952d8e2e4c74dc6ce9">
+      <component>
+        <assemblyIdentity name="netwmbclass.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="a1122ee691ec88562f84d4bd385d3e61">
+      <component>
+        <assemblyIdentity name="amdgpio2.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="b44047ecf1f8bfbed3384b2da28fc328">
+      <component>
+        <assemblyIdentity name="amdi2c.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="f64fea71bc0ab2628f57e054b3377466">
+      <component>
+        <assemblyIdentity name="athw8x.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="3e2ab903cc8f122186ef5b22c5b019c0">
+      <component>
+        <assemblyIdentity name="bcmdhd64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="f78ee1d2655e700e599dfa0cb27ab190">
+      <component>
+        <assemblyIdentity name="bcmfn2.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="fbb66b3681f3749cd4df70c8ae7d15d9">
+      <component>
+        <assemblyIdentity name="bcmwdidhdpcie.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="9cb46d2accc20a8a9f51d85ffb47d430">
+      <component>
+        <assemblyIdentity name="iagpio.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="df0fa9eaa893f36e67b6ca65d83abe0f">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_GPIO2_BXT_P.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="6f68f428997dcb9551eee81ee1e56e4d">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_GPIO2_CNL.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="860b20a4e7b65f27decc315404c7e512">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_GPIO2_GLK.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="238b16ca456594687152b500d899d4ce">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_GPIO2_SKL.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="c9cbdde600ff2436509d0697e903bec6">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_I2C_BXT_P.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="892b8e232b4460cf2a48b35a186acf75">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_I2C_CNL.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="868b793833649b643139d4947968cfe9">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_I2C_GLK.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="f0731898c8b5cde9fb20fbe5f367fdf2">
+      <component>
+        <assemblyIdentity name="iaLPSS2i_I2C_SKL.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="75676cd5272b405d9473e6d21486422f">
+      <component>
+        <assemblyIdentity name="mbtr8897w81x64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="ce9ccf067cb347aa9f26bab5ef9c88e0">
+      <component>
+        <assemblyIdentity name="mrvlpcie8897.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="8558ba7ad875b9731799cbf3703c9785">
+      <component>
+        <assemblyIdentity name="net8185.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="4b99bd62b8778a71cf4c75d6f86c2906">
+      <component>
+        <assemblyIdentity name="net8187bv64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="ac0409b2ea8316bd09b67461b35a4fc8">
+      <component>
+        <assemblyIdentity name="net8187se64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="152f6cb249e66bceca18e67f14ba1dc2">
+      <component>
+        <assemblyIdentity name="net8192se64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="bd5c70cf65a73eb7d790cf5017957713">
+      <component>
+        <assemblyIdentity name="net819xp.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="4a4becffc6da7d2770512eaf89e48443">
+      <component>
+        <assemblyIdentity name="netathr10x.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="32bb5b244f57103bb705e74570594cb5">
+      <component>
+        <assemblyIdentity name="netathrx.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="c9fc35018549854ffb136e1236212beb">
+      <component>
+        <assemblyIdentity name="netbc63a.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="ea89570b06b8c253d2c9410f25e7c24d">
+      <component>
+        <assemblyIdentity name="netbc64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="4bce61375b13319f6c7607b9c9582f74">
+      <component>
+        <assemblyIdentity name="netrtwlane.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="0f1df9b4fc50fede2faa466c575e8a20">
+      <component>
+        <assemblyIdentity name="netrtwlane01.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="3b643e0ddfb33a4f228d6adca080ff95">
+      <component>
+        <assemblyIdentity name="netrtwlane_13.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="fc4050e3f370c20e4c10ef0a19b5dc86">
+      <component>
+        <assemblyIdentity name="netwbw02.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="707dde0b473b13358555437c7d202fd5">
+      <component>
+        <assemblyIdentity name="netwew00.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="0bd5d81661194f004358228235f5b86c">
+      <component>
+        <assemblyIdentity name="netwew01.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="08fa765b095aacedc60f69596118ba8d">
+      <component>
+        <assemblyIdentity name="netwlv64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="5e7693deee55cb8f01b7e5b809699fd3">
+      <component>
+        <assemblyIdentity name="netwns64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="8088ed5d8dac8e878e1b7bf94b21f17f">
+      <component>
+        <assemblyIdentity name="netwsw00.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="acce9166b4bc34e8c065dff8c8b34655">
+      <component>
+        <assemblyIdentity name="netwtw02.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="8bbb079abf196b2d60e2a2d117bfd654">
+      <component>
+        <assemblyIdentity name="netwtw04.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="0fbe9666d73c2692239afde1cc892931">
+      <component>
+        <assemblyIdentity name="netwtw06.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="464e3a200da9f85a6aa1b87593726d67">
+      <component>
+        <assemblyIdentity name="netwtw08.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="8b0f5b46861f0ad9de9717ce18c6c155">
+      <component>
+        <assemblyIdentity name="rtvdevx64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="ecb0281829c35378d07e3b1dd34d1476">
+      <component>
+        <assemblyIdentity name="netirda.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="9171827e92f05861f27c941d804537a0">
+      <component>
+        <assemblyIdentity name="iai2c.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="34d8ccfeee3d00f978b67facd23e0ddc">
+      <component>
+        <assemblyIdentity name="intelpmax.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="545cdcfc390ac209c3547e4d60abc02e">
+      <component>
+        <assemblyIdentity name="net1ic64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="c6f8e0e1ba06a7ff3bc1d0bbac72389b">
+      <component>
+        <assemblyIdentity name="net8192su64.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="be7390b06af5f293822b24ce949e36ae">
+      <component>
+        <assemblyIdentity name="netr28ux.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="c2de7e2048c5001eaa23a5b030b83f88">
+      <component>
+        <assemblyIdentity name="netr28x.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="d3a304da75097990ec5ba74de680bcca">
+      <component>
+        <assemblyIdentity name="netr7364.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="27bd73d93aa54be9f07af509082bb83f">
+      <component>
+        <assemblyIdentity name="netrtwlans.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="4dccbc2d35c48b601845bbc291b8ba46">
+      <component>
+        <assemblyIdentity name="netrtwlanu.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="a033e410cd069d7fc57f84712df5fb6a">
+      <component>
+        <assemblyIdentity name="rtwlanu_oldIC.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="bafaba1567b0f0e87cbcac2bd86ffa49">
+      <component>
+        <assemblyIdentity name="Microsoft-Windows-Client-Drivers-merged-Deployment-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

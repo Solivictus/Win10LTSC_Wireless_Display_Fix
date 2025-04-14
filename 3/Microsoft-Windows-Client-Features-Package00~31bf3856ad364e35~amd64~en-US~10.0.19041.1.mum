@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-Windows-Client-Features-Package00" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-Windows-Client-Features-Package00" releaseType="Language Pack">
+    <update name="7A155ECFCC755EC553165F624F83BE7A8E5FBFDC5E65F9B45B890CB578AD0900">
+      <component>
+        <assemblyIdentity name="microsoft-windows-client-features-deployment000" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="05d4e0127a143dec6506a9ef6617b424">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Features-Package0010" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+    <update name="1c377352640e96789a5d9923e289a046">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Features-Package0011" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+  </package>
+</assembly>

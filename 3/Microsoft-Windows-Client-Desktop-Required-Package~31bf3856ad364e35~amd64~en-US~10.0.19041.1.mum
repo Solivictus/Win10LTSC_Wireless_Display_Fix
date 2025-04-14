@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-Windows-Client-Desktop-Required-Package" releaseType="Language Pack">
+    <parent disposition="detect" integrate="delegate">
+      <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" publicKeyToken="31bf3856ad364e35" buildType="release" />
+    </parent>
+    <update name="8BDEB97AB6DDA2FD7AD35268D463C80990D5B5B1C753ACBE684D8A99B6FF34EC">
+      <component>
+        <assemblyIdentity name="microsoft-windows-client-desktop-required-deployment0" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="0BEFCF35741A255128C4D880879315A57FF1F5D641B0A0AB0F26215455381050">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package00" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+    <update name="8103ba68184ad282234e95fdbdfb10e4">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package01" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+  </package>
+</assembly>

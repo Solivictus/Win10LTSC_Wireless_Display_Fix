@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Portable-Devices-WOW64-merged-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-Portable-Devices-WOW64-merged" releaseType="Feature Pack">
+    <update name="82cf4e702294d5f3496f4b2e5f5d396b">
+      <component>
+        <assemblyIdentity name="Microsoft-Windows-Portable-Devices-WOW64-merged-Deployment" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+  </package>
+</assembly>

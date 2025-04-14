@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-InternetExplorer-Optional-Package" version="11.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Internet Explorer 11_en-US" releaseType="Language Pack">
+    <parent disposition="staged" integrate="separate">
+      <assemblyIdentity name="Microsoft-Windows-InternetExplorer-Optional-Package" version="11.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </parent>
+    <update description="Finds and displays information and Web sites on the Internet." displayName="Internet Explorer 11" name="Internet-Explorer-Optional-amd64">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <parent name="Internet-Explorer-Optional-amd64" />
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity name="Microsoft-Windows-InternetExplorer-Optional-Deployment-LanguagePack" version="11.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="Microsoft-Windows-InternetExplorer-Package-ua">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-InternetExplorer-Package-ua" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' ms-appx-web:">
+    <title>Can&rsquo;t reach this page</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <script src="ms-appx-web:///Assets/ErrorPages/dnserror.js" language="javascript" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="PageUnavailable">
+            <div class="msgBlock">
+                <div class="msgBody">
+                    <table role="presentation">
+                        <tr>
+                            <td aria-hidden="true">
+                                <span id="icon">&#x0EB7D;</span>
+                            </td>
+                            <td>
+                                <h1 id="dnserror_unavailable_header">Hmmm...can&rsquo;t reach this page</h1>
+                                <p id="dnserror_unavailable_body">Try this</p>
+                                <ul>
+                                    <li id="PageUnavailableApplicationGuardWorkRelatedSuggestion">If this is a work-related site, open it in a new Microsoft Edge window outside of Application Guard</li>
+                                    <li><id id="dnserror_unavailable_righturl">Make sure you&rsquo;ve got the right web address: </id> <span class="webpageURL"></span></li>
+                                    <li><a href="#" id="dnsErrorSearchLink"><id id="dnserror_unavailable_search">Search for "<span class="webpageURL"></span>" on Bing</id></a></li>
+                                    <li><a href="#" id="dnsErrorRefreshLink"><id id="dnserror_unavailable_refresh">Refresh the page</id></a></li>
+                                </ul>
+                                <div id="moreInfoDropdown">
+                                    <a href="#" id="moreInformationDropdownLink" style="text-decoration: none;">
+                                        <span id="moreInformationDropdownSpan"></span>
+                                    </a>
+                                </div>
+                                <div id="infoBlockID">
+                                    <p id="subError"></p>
+                                    <p id="ErrorCode"></p>
+                                </div>
+                                <ul>
+                                    <li><a href="#" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                                </ul>
+                                <br>
+                                <a href="#" id="dnsPrivacyStatementLink"><id id="dnserror_unavailable_privacystatement"><small>Privacy statement</small></id></a>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="NotConnected">
+            <table role="presentation">
+                <tr>
+                    <td aria-hidden="true">
+                        <span id="icon">&#x0EB7C;</span>
+                    </td>
+                    <td>
+                        <h1 id="dnserror_offline_header">You&rsquo;re not connected</h1>
+                        <p id="dnserror_offline_body1">And the web just isn&rsquo;t the same without you. </p>
+                        <p id="dnserror_offline_body2">Let&rsquo;s get you back online</p>
+                        <ul>
+                            <li class="noCables"><id id="dnserror_offline_checkcables">Check that your network cables are plugged in.</id></li>
+                            <li><id id="dnserror_offline_airplanemode">Make sure you&rsquo;re not in airplane mode.</id></li>
+                            <li><id id="dnserror_offline_wirelessswitch">See if your wireless switch is turned on.</id></li>
+                            <li><id id="dnserror_offline_restartrouter">Restart your router.</id></li>
+                        </ul>
+                        <br />
+                        <button class="pushbutton" id="LaunchMSSettingsNetworkStatus" type="submit"><id id="dnserror_offline_networksettings">Help me fix it</id></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="locResources">
+            <p id="L_Unavailable_Title_TEXT">Can&rsquo;t reach this page</p>
+            <p id="L_Disconnected_Title_TEXT">You&rsquo;re not connected</p>
+            <p id="L_RESOURCE_NOT_FOUND_TEXT">This website could not be found.</p>
+            <p id="L_RESOURCE_NOT_FOUND_WSAECONNRESET_TEXT">The DNS server refused the connection.</p>
+            <p id="L_RESOURCE_NOT_FOUND_WSAETIMEDOUT_TEXT">The connection to the DNS server timed out.</p>
+            <p id="L_RESOURCE_NOT_FOUND_ERROR_SUCCESS_TEXT">There was a temporary DNS error. Try refreshing the page.</p>
+            <p id="L_RESOURCE_NOT_FOUND_WSAHOST_NOT_FOUND_TEXT">The DNS name does not exist.</p>
+            <p id="L_RESOURCE_NOT_FOUND_ERROR_OTHER_TEXT">The DNS server might be having problems.</p>
+            <p id="L_DOWNLOAD_FAILURE_TEXT">The connection to the website was reset.</p>
+            <p id="L_REDIRECT_FAILED_TEXT">There were too many redirections.</p>
+            <p id="L_CONNECTION_TIMEOUT_TEXT">It took too long to connect to this website.</p>
+            <p id="L_DATA_NOT_AVAILABLE_TEXT">We connected to the website, but didn&rsquo;t receive any data from it.</p>
+            <p id="L_ERROR_CODE_TEXT">Error Code: </p>
+            <p id="L_MOREINFO_TEXT">Details</p>
+        </div>
+    </div>
+</body>
+</html> 

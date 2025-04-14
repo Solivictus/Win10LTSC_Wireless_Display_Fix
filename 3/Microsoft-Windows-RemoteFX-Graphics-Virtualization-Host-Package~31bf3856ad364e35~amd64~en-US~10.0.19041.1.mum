@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="Includes RemoteFX Graphics Virtualization Host Components" displayName="RemoteFX Graphics Virtualization Host" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." supportInformation="http://support.microsoft.com">
+  <assemblyIdentity name="Microsoft-Windows-RemoteFX-Graphics-Virtualization-Host-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="ClientRDVGHost" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate" revisionCompare="EQ">
+      <assemblyIdentity name="Microsoft-Windows-RemoteFX-Graphics-Virtualization-Host-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </parent>
+    <update name="RemoteFX-RDVGM-LanguagePack">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="RemoteFX-RDVGM" />
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity name="microsoft-windows-RemoteFX-setup-update-oob-deployment-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="RemoteFX-HyperV-Integration-Components-LanguagePack">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="RemoteFX-HyperV-Integration-Components" />
+        </detectUpdate>
+      </applicable>
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-RemoteFX-HyperV-Integration-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update description="RemoteFX User Mode Transport Library language Pack for en-US" displayName="RemoteFX User Mode Transport Library Package Language Pack" name="Microsoft-Windows-TerminalServices-RemoteFX-User-Mode-Transport">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Virtualization-RemoteFX-User-Mode-Transport-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

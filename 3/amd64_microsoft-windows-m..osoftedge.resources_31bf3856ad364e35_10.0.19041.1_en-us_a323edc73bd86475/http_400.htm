@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>HTTP 400 error</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="HTTP400">
+            <table>
+                <tr>
+                    <td>
+                        <span id="icon">&#xE946;</span>
+                    </td>
+                    <td>
+                        <h1 id="http400_header1">HTTP 400 error</h1>
+                        <h1 id="http400_header2">It&rsquo;s not you, it&rsquo;s this link (it appears to be broken)</h1>
+                        <p id="http400_body">Try this</p>
+                        <ul>
+                            <li><id id="http400_retypeURL">Retype the web address</id></li>
+                            <li><a href="#" onclick="window.history.back(); return false;"><id id="http400_goback">Go back to the last page</id></a></li>
+                            <li><a href="#" onclick="window.location = 'https://www.bing.com/search?q=' + getUrl(); return false;"><id id="http400_search">Search for the page</id></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

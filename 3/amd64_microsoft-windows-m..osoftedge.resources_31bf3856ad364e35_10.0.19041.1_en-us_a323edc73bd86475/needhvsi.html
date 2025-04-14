@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Application Guard needed</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        "use strict";
+
+        window.onload = function () {
+            if (ContainerErrorPageHVSIError())
+            {
+                document.getElementById("needhvsi_untrusted_url_page").style.display = "none";
+                document.getElementById("needhvsi_network_isolation_api_fail_page").style.display = "none";
+                document.getElementById("needhost_other_error_page").style.display = "none";
+                document.getElementById("ErrorCode1").textContent = "Error Code: " + findValue("error=");
+            }
+            else if (ContainerErrorPageOtherError())
+            {
+                document.getElementById("needhvsi_untrusted_url_page").style.display = "none";
+                document.getElementById("needhvsi_network_isolation_api_fail_page").style.display = "none";
+                document.getElementById("needhost_hvsi_error_page").style.display = "none";
+                document.getElementById("ErrorCode2").textContent = "Error Code: " + findValue("error=");
+                var url = getUrl();
+                var urlElements = document.getElementsByClassName("webpageURL");
+                for (var i = 0; i < urlElements.length; i++) {
+                    urlElements[i].textContent = url;
+                }
+            }
+            else
+            {
+                document.getElementById("needhost_hvsi_error_page").style.display = "none";
+                document.getElementById("needhost_other_error_page").style.display = "none";
+                // Determine if we are in the network isolation api fail case, and change the
+                // page accordingly.
+                if (IsNetworkIsolationApiErrorPage())
+                {
+                    document.getElementById("needhvsi_untrusted_url_page").style.display = "none";
+                }
+                else
+                {
+                    document.getElementById("needhvsi_network_isolation_api_fail_page").style.display = "none";
+                }
+                
+                if (HasHVSIAlreadyLaunched())
+                {
+                    // If HVSI has already launched, do not show launch button.
+                    document.getElementById("LaunchInHVSI").style.display = "none";
+                }
+            }
+        };
+
+        function IsNetworkIsolationApiErrorPage()
+        {
+            return (findValue("networkApiFail=") === "1");
+        }
+
+        function HasHVSIAlreadyLaunched()
+        {
+            return (findValue("hvsiStarted=") === "1");
+        }
+
+        // Launch URL in HVSI
+        function OnLaunchInHVSIClicked()
+        {
+            window.external.LaunchInHVSI(getNavigationURL(), GetUID());
+        }
+
+        function GetUID()
+        {
+            return (findValue("UID=") || "N/A");
+        }
+        
+        function ContainerErrorPageHVSIError()
+        {
+            return (findValue("containerErrorLevel=") === "1")
+        }
+        
+        function ContainerErrorPageOtherError()
+        {
+            return (findValue("containerErrorLevel=") === "2")
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="Wrapper">
+        <div id="NotConnected">
+            <table>
+                <tr>
+                    <td><span id="icon">&#xF0EF;</span></td>
+                    <td>
+                        <div id="needhvsi_untrusted_url_page">
+                            <h1 id="needhvsi_untrusted_url_header">This page opens in Application Guard for Microsoft Edge</h1>
+                            <p id="needhvsi_untrusted_url_body">
+                                To help protect your PC, you&rsquo;ll need to browse this page in a separate environment for Microsoft Edge.
+                                Some features of the browser might be restricted in Application Guard.
+                            </p>
+                            <br />
+                            <button id="LaunchInHVSI"
+                                    class="pushbutton"
+                                    type="submit"
+                                    onclick="OnLaunchInHVSIClicked();">
+                                <id id="needhvsi_open_in_hvsi">Open in Application Guard</id>
+                            </button>
+                        </div>
+                        <div id="needhvsi_network_isolation_api_fail_page">
+                            <h1 id="needhvsi_network_isolation_api_fail_header">We can&rsquo;t open this page right now</h1>
+                            <p id="needhvsi_network_isolation_api_fail_body1">Try this</p>
+                            <ul>
+                                <li><a href="#" onclick="clickRefresh(); return false;"><id id="needhvsi_network_isolation_api_fail_refresh">Refresh</id></a></li>
+                                <li><a href="#" onclick="clickSendFeedback()" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                            </ul>
+                            <br>
+                            <a href="#" onclick="clickPrivacyStatement()" id="needhvsi_PrivacyStatementLink"><id id="needhvsi_privacystatement"><small>Privacy statement</small></id></a>
+                        </div>
+                        <div id="needhost_hvsi_error_page">
+                            <h1 id="needhost_hvsi_error_header">Hmmm...can&rsquo;t reach this page</h1>
+                            <p id="needhost_hvsi_error_body">Try this</p>
+                            <ul>
+                                <li>If this is a work-related site, open it in a new browser window outside of Application Guard.</li>
+                                <li><a href="#" onclick="clickRefresh(); return false;"><id id="error_unavailable_refresh">Refresh the page</id></a></li>
+                            </ul>
+                            <br />
+                            <br />
+                            <div>
+                                <p>Details:</p>
+                                <p><id id="ErrorCode1"><span class="errorCode"></span></id></a></p>
+                            </div>
+                            <br />
+                        </div>
+                        <div id="needhost_other_error_page">
+                            <h1 id="needhost_other_error_header">Hmmm...can&rsquo;t reach this page</h1>
+                            <p id="needhost_other_error_body">Try this</p>
+                            <ul>
+                                <li>If this is a work-related site, open it in a new browser window outside of Application Guard.</li>
+                                <li>Make sure you've entered the right web address</li>
+                                <li><a href="#" onclick="clickSearch(); return false;"><id id="error_unavailable_search">Search for "<span class="webpageURL"></span>" on Bing</id></a></li>
+                                <li><a href="#" onclick="clickRefresh(); return false;"><id id="error_unavailable_refresh">Refresh the page</id></a></li>
+                            </ul>
+                            <br />
+                            <br />
+                            <div>
+                                <p>Details:</p>
+                                <p><id id="ErrorCode2"><span class="errorCode"></span></id></a></p>
+                            </div>
+                            <br />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

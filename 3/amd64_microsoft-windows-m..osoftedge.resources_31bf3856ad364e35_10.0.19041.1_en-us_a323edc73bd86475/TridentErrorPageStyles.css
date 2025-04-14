@@ -1,0 +1,272 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@font-face {
+    font-family: "Browser MDL2 Assets";
+    src: url('ms-appx-web:///Assets/Fonts/BrowserMDL.ttf#Browser MDL2 Assets') format('truetype');
+}
+
+body
+{
+    font-family: "Segoe UI", Verdana, Arial;
+    background-color: #E8EAEF;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #575757;
+}
+
+body.securityError
+{
+    text-align: center;
+    font-family: "Segoe UI", Verdana, Arial;
+    background-color: #A90000;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+a
+{
+    color: rgb(19,112,171);
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 0px;
+    vertical-align: top;
+}
+
+a:link, a:visited
+{
+    color: rgb(19,112,171);
+    text-decoration: none;
+    vertical-align: top;
+}
+
+a:hover
+{
+    color: rgb(7,74,229);
+    text-decoration: underline;
+}
+
+h4 /* used for task links*/
+{
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-top: 12px;
+    margin-bottom: 1px;
+    vertical-align: middle;
+    font-size: .8em;
+    color: #a5a5a5;
+}
+
+.actionIcon /* used for task link icons */
+{
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.infoBlock
+{
+    padding-left: 25px;
+    font-size: 0.9em;
+    display: block;
+    line-height: 1.1em;
+    color: #575757;
+}
+
+.errorCodeAndDivider
+{
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #787878;
+}
+
+ul, ol
+{
+    font-size: 0.9em;
+    list-style-position: outside;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    line-height: 1.3em;
+}
+
+.divider
+{
+    border-bottom: #B6BCC6 1px solid;
+}
+
+#Wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    min-width: 320px;
+    max-width: 600px;
+}
+
+h1 {
+    line-height: 28px;
+    font-size: 24px;
+    font-family: "Segoe UI SemiLight", "Segoe UI";
+    font-weight: normal;
+    color: #1f1f1f;
+    margin: 0;
+    padding: 4px 28px 0 0;
+}
+
+h2 {
+    line-height: 28px;
+    font-size: 20px;
+    font-family: "Segoe UI SemiLight", "Segoe UI";
+    font-weight: normal;
+    color: #a90000;
+    margin: 0;
+    padding: 4px 28px 0 0;
+}
+
+p {
+    line-height: 20px;
+    font-size: 15px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    color: #1f1f1f;
+    margin: 16px 28px 0 0;
+    padding: 0;
+}
+
+td, table {
+    vertical-align: top;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#webpage {
+    line-height: 20px;
+    font-size: 15px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    color: #4d4d4d;
+}
+
+#icon {
+    font-size: 80px;
+    font-family: "Segoe UI Symbol"
+    font-weight: bold;
+    color: #1f1f1f;
+    margin: 0px 24px 0px 10px;
+    display: block;
+}
+
+#erroricon {
+    font-size: 50px;
+    font-family: "Browser MDL2 Assets";
+    font-weight: bold;
+    color: #a90000;
+    margin: 5px 20px 0px 10px;
+    display: block;
+}
+
+#erroricon2 {
+    font-size: 64px;
+    font-family: "Segoe UI Symbol";
+    font-weight: bold;
+    color: #a90000;
+    margin: 0px 20px 0px 10px;
+    display: block;
+}
+
+#smallerroricon {
+    font-size: 15px;
+    font-family: "Browser MDL2 Assets";
+    font-weight: bold;
+    color: #a90000;
+    display: block;
+}
+
+.smallicon {
+    font-size: 12px;
+    font-family: "Segoe UI Symbol";
+    font-weight: bold;
+    color: #1f1f1f;
+    display: block;
+}
+
+#smallgoodicon {
+    font-size: 15px;
+    font-family: "Segoe UI Symbol";
+    font-weight: bold;
+    color: #1f1f1f;
+    display: block;
+}
+
+#ptext {
+    line-height: 20px;
+    font-size: 15px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    color: #1f1f1f;
+    margin: 16px 28px 0 0;
+    padding: 0;
+}
+
+#h1text {
+    line-height: 28px;
+    font-size: 24px;
+    font-family: "Segoe UI SemiLight", "Segoe UI";
+    font-weight: normal;
+    color: #1f1f1f;
+    margin: 0;
+    padding: 4px 28px 0 0;
+}
+
+.textSizeH2 /* used for Heading in Main Body */
+{
+    font-size: 1.3em;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.textOrigSite /* used for displaying the original site domain */
+{
+    font-size: 1em;
+    font-weight: normal;
+    vertical-align: middle;
+    color: #a5a5a5;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+/* create dialog look */
+.innerbox {
+    padding: .1em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.outerbox{
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: #f7f7f7;
+    position: relative;
+    top: 28px;
+    padding: 0em;
+    width: 600px;
+}
+
+.branding{ 
+    margin-left: auto; 
+    margin-right: auto;
+    position: relative;
+    top: 18px;
+    padding: 0em;
+    width: 600px;
+    text-align: right;
+}

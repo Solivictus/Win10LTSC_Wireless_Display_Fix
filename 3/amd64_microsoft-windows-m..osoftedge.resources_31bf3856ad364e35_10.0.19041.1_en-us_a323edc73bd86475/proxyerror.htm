@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Proxy server error</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        "use strict";
+        window.onload = function () {
+            // The Settings app cannot be launched from the isolated container.
+            var buttonLaunchMSSettingsNetworkProxy = document.getElementById("LaunchMSSettingsNetworkProxy");
+            buttonLaunchMSSettingsNetworkProxy.style.display = isInApplicationGuard() ? "none" : null;
+        };
+    </script>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="proxyerror">
+            <table>
+                <tr>
+                    <td>
+                        <span id="icon">&#xE946;</span>
+                    </td>
+                    <td>
+                        <h1 id="proxyerror_header">Can&rsquo;t connect to the proxy server</h1>
+                        <p id="proxyerror_body">Try this</p>
+                        <ul>
+                            <li><id id="proxyerror_firewall">Make sure firewall settings aren&rsquo;t blocking your web access</id></li>
+                            <li><id id="proxyerror_administrator">Ask your system administrator for help</id></li>
+                        </ul>
+                        <br />
+                        <button class="pushbutton" id="LaunchMSSettingsNetworkProxy" type="submit" onclick="window.location='ms-settings:network-proxy'"><id id="proxyerror_proxysettings">Go to proxy settings</id></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

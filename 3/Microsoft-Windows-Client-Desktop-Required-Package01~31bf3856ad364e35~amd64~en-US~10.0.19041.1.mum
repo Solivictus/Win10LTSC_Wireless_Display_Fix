@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package01" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+  <package identifier="Microsoft-Windows-Client-Desktop-Required-Package01" releaseType="Language Pack">
+    <update name="97EBAAE03F6BC18DE528B2EF4F3326D517F8597A7636113EDAE771D5BDF55D0A">
+      <component>
+        <assemblyIdentity name="microsoft-windows-client-desktop-required-deployment010" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="A7E7D9D032C690564A57AF6F67AAFC02BB339D2214B6DD8186E249571A0E7322">
+      <component>
+        <assemblyIdentity name="usbcciddriver.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="AE4A3AB2CD9E4177DB6D95306F0991A78A1D1E75B7C69DAC269504D589E88037">
+      <component>
+        <assemblyIdentity name="usbser.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="0E9C3BE45DD9919D42C5F164400A11A44C425B0BF11BCEFEFE6EFD5C11661EC2">
+      <component>
+        <assemblyIdentity name="bthpan.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="E4B20DD68EF6CA140301FAB953DDDADE9C195E8A124A60DE212B70BDCAA314C9">
+      <component>
+        <assemblyIdentity name="urschipidea.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="B0BC72C9AC24AD7C8664B76CCDDA92A7AABF8B63148A122602651381ED756E84">
+      <component>
+        <assemblyIdentity name="urssynopsys.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="37EAD412ABB57CFFC72ED2D8D4EAFCE02E093A9AAEE3CCC71B279CB6617D1320">
+      <component>
+        <assemblyIdentity name="genericusbfn.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="26E00611D89F4A4D9C8F2F077F164DC11A302272764CB34510B0A5AA65708061">
+      <component>
+        <assemblyIdentity name="ufxchipidea.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="CCCA96817C1A69F94AC730D66516CE51F8D3DAD9B13C580870F9181F69C08776">
+      <component>
+        <assemblyIdentity name="ufxsynopsys.inf-LanguagePack" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="8bd43e287b0b52b72a81ba844174a072">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package0110" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+    <update name="9ad07c557d8556d22cf5d5c816633b42">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package0111" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+    <update name="a3128309cf0637ad8e6f6b14e2cc3cf4">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package0112" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+    <update name="67d3c3c81806c17500ddcaf4e077c3cc">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package0113" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" publicKeyToken="31bf3856ad364e35" buildType="release" />
+      </package>
+    </update>
+  </package>
+</assembly>

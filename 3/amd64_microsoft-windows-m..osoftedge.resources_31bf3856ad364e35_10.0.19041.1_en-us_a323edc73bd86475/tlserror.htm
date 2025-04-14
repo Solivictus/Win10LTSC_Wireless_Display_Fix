@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Can&rsquo;t connect securely to this page</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        var L_NONDEFAULT_SETTINGS_TEXT = "Your TLS security settings aren\u2019t set to the defaults, which could also be causing this error.";
+
+        function checkTLSError() {
+            var protocolSettings = Number(findValue("SecureProtocol="));
+            var defaultSettings = 2688; // 0xa80 - TLS 1.0, TLS 1.1, TLS 1.2
+            if (protocolSettings !== defaultSettings) {
+                document.getElementById("subError").innerHTML += "<br><br>" + L_NONDEFAULT_SETTINGS_TEXT;
+            }
+        }
+    </script>
+</head>
+
+<body onload="checkTLSError()">
+    <div id="Wrapper">
+        <div id="tlserror">
+            <table>
+                <tr>
+                    <td>
+                        <span id="icon">&#xE946;</span>
+                    </td>
+                    <td>
+                        <h1 id="tlserror_header">Can&rsquo;t connect securely to this page</h1>
+                        <p class="BodyTextBlockStyle" id="subError">This might be because the site uses outdated or unsafe TLS security settings. If this keeps happening, try contacting the website&rsquo;s owner.</p>
+                        <p id="tlserror_body">Try this:</p>
+                        <ul>
+                            <li><a href="#" onclick="window.history.back(); return false;"><id id="tlserror_goback">Go back to the last page</id></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Client-Optional-Features-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-Client-Optional-Features-Package_en-US LP" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate">
+      <assemblyIdentity name="Microsoft-Windows-Client-Optional-Features-Package" version="10.0.19041.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </parent>
+    <update name="Microsoft-Windows-Identity-Foundation-Package-Language-Pack">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Identity-Foundation-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update description="en-US Language Pack for Simple TCPIP services" displayName="SimpleTCP-LanguagePack" name="SimpleTCP-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-SimpleTCP-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update description="Windows PowerShell 2.0 Language pack for en-US" displayName="Windows PowerShell 2.0 Language Pack" name="PowerShellV2LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-PowerShell-V2-Client-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-Lxss-Optional-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Lxss-Optional-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update description="Microsoft-Windows-RemoteAssistance-Package-Client Language Pack for en-US" displayName="Microsoft-Windows-RemoteAssistance-Package-Client Language Pack" name="Microsoft-Windows-RemoteAssistance-Package-Client">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-RemoteAssistance-Package-Client" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-HyperV-OptionalFeature-HypervisorPlatform-Disabled-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-HyperV-OptionalFeature-HypervisorPlatform-Disabled-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+    <update name="Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Disabled-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-HyperV-OptionalFeature-VirtualMachinePlatform-Disabled-Package" version="10.0.19041.1" processorArchitecture="amd64" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

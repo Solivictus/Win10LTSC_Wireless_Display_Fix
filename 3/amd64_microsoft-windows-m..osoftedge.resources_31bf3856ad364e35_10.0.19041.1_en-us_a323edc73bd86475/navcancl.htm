@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Loading page error</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+
+        window.onload = function () {
+            var url = getUrl();
+            var urlElements = document.getElementsByClassName("webpageURL");
+            for (var i = 0; i < urlElements.length; i++) {
+                urlElements[i].textContent = url;
+            }
+
+            getInfo();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="navcancl">
+            <table>
+                <tr>
+                    <td>
+                        <span id="icon">&#xE946;</span>
+                    </td>
+                    <td>
+                        <h1 id="navcancl_header">Well, that didn&rsquo;t work</h1>
+                        <p id="navcancl_body">Try this</p>
+                        <ul>
+                            <li><a href="#" onclick="clickRefresh(); return false;"><id id="navcancl_refresh">Refresh the page</id></a></li>
+                            <li><id id="navcancl_retype">Retype the web address</id></li>
+                            <li><a href="#" onclick="clickSendFeedback()" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                        </ul>
+                        <br>
+                        <a href="#" onclick="clickPrivacyStatement()" id="navcancl_PrivacyStatementLink"><id id="navcancl_privacystatement"><small>Privacy statement</small></id></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

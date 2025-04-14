@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>PDF error</title>
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+</head>
+
+<body>
+    <div id="Wrapper">
+        <div id="HTTP500">
+            <table>
+                <tr>
+                    <td><span id="icon">&#xE946;</span> </td>
+                    <td>
+                            <h1 id="pdferror_header">Couldn’t open PDF</h1>
+                            <p id="pdferror_body">Something’s keeping this PDF from opening.</p>
+                        <ul>
+                            <li><a href="#" onclick="window.history.back(); return false;"><id id="pdferror_goback">Go back to the last page</id></a></li>
+                            <li><a href="#" onclick="clickSendFeedback()" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                        </ul>
+                        <br>
+                        <a href="#" onclick="clickPrivacyStatement()" id="pdferror_PrivacyStatementLink"><id id="pdferror_privacystatement"><small>Privacy statement</small></id></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

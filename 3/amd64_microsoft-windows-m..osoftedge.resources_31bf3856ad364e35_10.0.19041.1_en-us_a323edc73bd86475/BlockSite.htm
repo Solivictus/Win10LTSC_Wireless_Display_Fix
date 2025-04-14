@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="ms-appx-web:///Assets/ErrorPages/PhishSiteStyles.css">
+    <link rel="stylesheet" type="text/css" href="PhishSiteStyles.css">
+    <title>Reported Unsafe Website: Navigation Blocked</title>
+
+    <script language="javascript" type="text/javascript">
+        // Localized strings used by phishsite.js.
+        var L_PhishingThreat_TEXT = "Phishing threat: This is a phishing website that impersonates a trusted website to trick you into revealing personal or financial information.";
+        var L_MalwareThreat_TEXT = "Malicious software threat: This site contains links to viruses or other software programs that can reveal personal information stored or typed on your computer to malicious persons.";
+
+        var L_TopFrameUnsafe_TEXT = "This website has been reported as unsafe";
+        var L_ContentUnsafe_TEXT = "Content on this website has been reported as unsafe";
+        var L_Content_TEXT = "Hosted by:  ";
+
+        // Localized strings used by httpErrorPagesScripts.js.
+        var L_MOREINFO_TEXT = "More information";
+    </script>
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" language="javascript" type="text/javascript">
+    </script>
+    <script src="ms-appx-web:///Assets/ErrorPages/httpErrorPagesScripts.js" language="javascript" type="text/javascript">
+    </script>
+
+    <script src="ms-appx-web:///Assets/ErrorPages/phishsite.js" language="javascript" type="text/javascript">
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        function expandCollapsePhish(elem, changeImage) {
+            if (document.getElementById) {
+                ecBlock = document.getElementById(elem);
+                elemImage = document.getElementById(elem + "Span");
+
+                if (ecBlock != undefined && ecBlock != null) {
+                    var displayValue = getDisplayValue(ecBlock);
+                    if (displayValue == "none" || displayValue == null || displayValue == "") {
+                        //shows the info.
+                        ecBlock.style.display = "block";
+                        if (changeImage) {
+                            //Just got in expanded mode. Thus, change image to "collapse"
+                            elemImage.innerHTML = "&#x0e70e;";
+                        }
+                    }
+                    else if (displayValue == "block") {
+                        //hide info
+                        ecBlock.style.display = "none";
+                        if (changeImage) {
+                            //Just got in collapsed mode. Thus, change image to "expand"
+                            elemImage.innerHTML = "&#x0e70d;";
+                        }
+                    }
+                    else {
+                        //catch any weird circumstances.
+                        ecBlock.style.display = "block";
+                        if (changeImage) {
+                            elemImage.innerHTML = "&#x0e70e;";
+                        }
+                    }
+                }//end check ecBlock
+            }//end getElemById
+        }//end expandCollapse
+    </script>
+</head>
+
+<body onload="BodyLoad(); javascript: expandCollapsePhish('infoBlockID', true);" class="red">
+    <div id="Wrapper">
+        <div class="msgBlock red">
+            <div class="msgIcon white icon">&#x0e7ba;</div>
+            <div class="msgBody white">
+                <h2 id="mainTitle" class="white"></h2>
+                <h3 id="contentlocations" name="contentlocations"></h3>
+                <h3 id="hostsite" name="hostsite"></h3>
+                <p><id id="recommendation">We recommend that you do not continue to this website. It has been reported to Microsoft for containing threats to your computer that might reveal personal or financial information.</id></p>
+                <button class="white-pushbutton" style="margin: 24px 0 24px 0" type="submit" onclick="javascript: window.location='about:home'; return false;"><id id="goToHomePage">Go to my home page instead</id></button>
+                <div>
+                    <a href="#" id="moreInformationDropdownLink" style="text-decoration: none;" onclick="javascript: expandCollapsePhish('infoBlockID', true); return false;">
+                        <span class="white" style="font-size: 13px; font-family: 'Segoe UI'" id="moreInformationDropdownSpan"></span>
+                    </a>
+                    <a href="#" style="text-decoration: none;" onclick="javascript: expandCollapsePhish('infoBlockID', true); return false;">
+                        <span>&nbsp;</span><span class="white icon" style="width: 12px; font-size: 12px" id="infoBlockIDSpan">&#x0e70d;</span>
+                    </a>
+                </div>
+                <div style="font-size: 12px; font-family: 'Segoe UI'; margin: 14px 12px 0 12px" id="infoBlockID">
+                    <div style="margin: 0 0 24px 0">
+                        <id id="threatsIntro">This website has been reported to contain the following threats:</id>
+                        <ul id="threatsList">
+                            <li id="PhishingThreat" class="bullet-li" name="PhishingThreat" style="display:none"></li>
+                            <li id="MalwareThreat" class="bullet-li" name="MalwareThreat" style="display:none"></li>
+                        </ul>
+                    </div>
+                    <div><a href='javascript:makeReportURL();' class="white">Report that this site does not contain threats</a></div>
+                    <div id="DoOverride"><a href='' class="white" name="overrideLink" id="overrideLink">Disregard and continue (not recommended)</a></div>
+                </div>
+                <div id="branding" style="font-size: 12px; font-family: 'Segoe UI'; text-align: right; margin-top: 12px"><id id="SmartScreenOutro">Windows Defender SmartScreen</id></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

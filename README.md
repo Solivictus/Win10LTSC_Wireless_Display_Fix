@@ -1,5 +1,10 @@
 # Wireless Display Fix I guess
 
+If you get signature error 0x800b0100 mean you have a different Windows build version, you will have to find the ESD package matching your build version on UUP dump or somewhere else.
+
+**Windows update will not work if you have any "illegally" installed packages, you have to remove then via dism, update your Windows, then add them again to use Wireless Display.**
+Which you might not need to repeat many times since Win 10 is in EOL and LTSCs aren't receiving any updates really.
+
 A Lazy one click(kinda-sorta-ish) solution for the infamous:
 
 ```
